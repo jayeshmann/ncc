@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/not_selected"
+        android:title="@string/login_as"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:title="Directorate"
+        android:visible="true"
+        app:showAsAction="never">
+        <menu>
+
+
+            <item android:id="@+id/adg"
+                android:title="ADG" />
+            <item android:id="@+id/ddg"
+                android:title="DDG" />
+            <item android:id="@+id/director"
+                android:title="Director" />
+            <item android:id="@+id/ad_trg"
+                android:title="AD_Trg" />
+            <item android:id="@+id/ad_lgs"
+                android:title="AD_Lgs" />
+            <item android:id="@+id/ad_ms"
+                android:title="AD_MS" />
+            <item android:id="@+id/pc"
+                android:title="AD_P&amp;C" />
+        </menu>
+    </item>
+
+    <item
+        android:title="Group"
+        android:visible="true"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/gp_cdr"
+                android:title="Gp Cdr" />
+            <item android:id="@+id/dy_gp_cdr"
+                android:title="Dy Gp Cdr" />
+            <item android:id="@+id/trg_off"
+                android:title="Trg Officer" />
+        </menu>
+    </item>
+
+    <item
+        android:title="Unit"
+        android:visible="true"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/co"
+                android:title="CO" />
+            <item android:id="@+id/adm_officer"
+                android:title="Adm Officer" />
+        </menu>
+    </item>
+
+    <item
+        android:title="Institute"
+        android:visible="true"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/principal"
+                android:title="Principal" />
+            <item android:id="@+id/ano_opt"
+                android:title="ANO" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/cadet_opt"
+        android:title="Cadet" />
+
+</menu>

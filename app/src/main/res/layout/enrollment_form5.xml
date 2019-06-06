@@ -1,0 +1,158 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:src="@drawable/background"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_weight=".1"
+                android:background="@color/red"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:weightSum="1.0">
+
+                    <ImageView
+                        style="@style/HorizontalWeight"
+                        android:layout_weight=".2"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@drawable/logo" />
+
+                    <TextView
+                        android:id="@+id/frg_title"
+                        style="@style/HorizontalWeight"
+                        android:layout_weight=".7"
+                        android:gravity="center"
+                        android:text="Enrolment Form"
+                        android:textAlignment="gravity"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/button1"
+                        style="@style/HorizontalWeight"
+                        android:layout_weight=".1"
+                        android:padding="@dimen/_3sdp"
+                        android:src="@drawable/three_dots"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+            <TextView
+                style="@style/my_tv"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/DECLARATION"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/part1_tv"
+                style="@style/my_tv"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/ACCEPTANCE"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/part2_tv"
+                style="@style/my_tv"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/ENROLMENT"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/part3_tv"
+                style="@style/my_tv"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/india"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/image_title"
+                    style="@style/VerticalWeight"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_weight=".2"
+                    android:background="@color/Vilate"
+                    android:gravity="center"
+                    android:text="@string/Upload"
+                    android:visibility="visible"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/image_iv"
+                    style="@style/VerticalWeight"
+                    android:layout_weight=".8"
+                    android:src="@android:drawable/ic_search_category_default" />
+
+
+            </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_red"
+    android:weightSum="1">
+    <Button
+        android:id="@+id/upload_bt"
+        style="@style/HorizontalWeight"
+        android:background="@drawable/rounded_corner_button_transparent"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:text="Choose File"
+        android:layout_margin="@dimen/_5sdp"
+        android:textColor="@color/light_red_material" />
+    <Button
+        android:id="@+id/next_button"
+        style="@style/HorizontalWeight"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corner_button_transparent"
+        android:layout_margin="@dimen/_5sdp"
+        android:text="strinSubmits"
+        android:textColor="@color/light_red_material" />
+</LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

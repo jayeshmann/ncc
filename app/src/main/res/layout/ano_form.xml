@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".activities.CadetEnrollmentFormActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/red"
+        android:layout_weight=".1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:weightSum="1.0">
+
+            <ImageView
+                style="@style/HorizontalWeight"
+                android:layout_weight=".2"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/frg_title"
+                style="@style/HorizontalWeight"
+                android:layout_weight=".7"
+                android:gravity="center"
+                android:text="Enrolment Form"
+                android:textAlignment="gravity"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/button1"
+                style="@style/HorizontalWeight"
+                android:visibility="gone"
+                android:layout_weight=".1"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/three_dots" />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:text="Personal Details"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:visibility="gone"
+        style="@style/my_title"/>
+////////////////////////////////////////////////////////////////////////////////////////////////////
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="1: Name *" />
+
+    <LinearLayout
+        style="@style/WrapMatchWeight"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/first_name_et"
+            style="@style/my_et"
+            android:layout_weight="1"
+            android:hint="First Name" />
+
+        <EditText
+            android:id="@+id/mid_name_et"
+            style="@style/my_et"
+            android:layout_weight="1"
+            android:hint="Mid Name" />
+
+        <EditText
+            android:id="@+id/last_name_et"
+            style="@style/my_et"
+            android:layout_weight="1"
+            android:hint="Last Name" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="2: Date Of Birth *" />
+
+    <LinearLayout
+        android:id="@+id/app_date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:weightSum="1.0">
+
+        <ImageView
+            android:id="@+id/dob_iv"
+            style="@style/HorizontalWeight"
+            android:layout_weight=".1"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/date" />
+
+        <TextView
+            android:id="@+id/app_dob_tv"
+            style="@style/HorizontalWeight"
+            android:layout_marginLeft="15dp"
+            android:layout_weight=".8"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:hint="Select Date of Appointment"
+            android:textAlignment="gravity"
+            android:textSize="@dimen/_15ssp" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="4. Are you married ?" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/married_yes_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Married"
+            android:textColor="@color/green" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Unmarried"
+            android:textColor="@color/green" />
+    </RadioGroup>
+
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="3: Father’s/Guardian’s/Husband’s name *" />
+
+    <LinearLayout
+        style="@style/WrapMatchWeight"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/p_first_name_et"
+            style="@style/my_et"
+            android:layout_weight="1"
+            android:hint="First Name" />
+
+        <EditText
+            android:id="@+id/p_mid_name_et"
+            style="@style/my_et"
+            android:layout_weight="1"
+            android:hint="Mid Name" />
+
+        <EditText
+            android:id="@+id/p_last_name_et"
+            style="@style/my_et"
+            android:layout_weight="1"
+            android:hint="Last Name" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="4: State *"/>
+
+    <Spinner
+        android:id="@+id/state_sp"
+        android:entries="@array/state"
+        style="@style/my_spinner"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="5: District *"/>
+
+    <Spinner
+        android:id="@+id/district_sp"
+        style="@style/my_spinner"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="6:City/Vill *" />
+
+    <EditText
+        android:id="@+id/vill_city_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="7:Post Office *" />
+
+    <EditText
+        android:id="@+id/post_office_et"
+        style="@style/my_et" />
+
+    <TextView
+        android:id="@+id/state_tv"
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="8: Nationality *" />
+
+    <Spinner
+        android:id="@+id/nationality_sp"
+        android:entries="@array/nationality"
+        style="@style/my_spinner"></Spinner>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="9:your educational qualifications *" />
+
+    <EditText
+        android:id="@+id/educationb_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="10:What is your appointment ? *" />
+
+    <EditText
+        android:id="@+id/appointment_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="11:Have you ever served in the NC as officer/which unit and ? *" />
+
+    <EditText
+        android:id="@+id/ncc_officer_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="12.Are you willing to be appointed as an officer in the National Cadet Corps.Girls Division, under the NCC Act 1948 ?" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/willing_yes_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Yes"
+            android:textColor="@color/green" />
+
+        <RadioButton
+            android:id="@+id/willing_no_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="No"
+            android:textColor="@color/green" />
+    </RadioGroup>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="13.Are you willing to undergo military training as a qualified in the Act and rules made the rounder ?" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/military_yes_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Yes"
+            android:textColor="@color/green" />
+
+        <RadioButton
+            android:id="@+id/military_no_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="No"
+            android:textColor="@color/green" />
+    </RadioGroup>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="14.Are you willing to serve in the National Cadet Corps unit you are discharged" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/serve_yes_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Yes"
+            android:textColor="@color/green" />
+
+        <RadioButton
+            android:id="@+id/serve_no_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="No"
+            android:textColor="@color/green" />
+    </RadioGroup>
+
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="15.Are you willing to obey the orders of officers placed in command over you and obey the rules and regulations laid down from time to time when undergoing Pre commission military training ?" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/obey_yes_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Yes"
+            android:textColor="@color/green" />
+
+        <RadioButton
+            android:id="@+id/obey_no_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="No"
+            android:textColor="@color/green" />
+    </RadioGroup>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="16:Have you ever served in the Armed Forces or WAC (I) ? If son state in which the period of service and the cause of discharged ?*"/>
+
+    <EditText
+        android:id="@+id/served_inforces"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="17: Mobile Number *" />
+
+    <EditText
+        android:id="@+id/mobile_no_et"
+        style="@style/my_et"
+        android:inputType="number"
+        android:maxLength="10" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="18:Email *" />
+
+    <EditText
+        android:id="@+id/email_et"
+        style="@style/my_et" />
+
+    <TextView
+        style="@style/my_tv"
+        android:text="19:Wing *" />
+
+    <Spinner
+        android:id="@+id/wing_sp"
+        style="@style/my_spinner"
+        android:entries="@array/wing"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="20.Group HQ *" />
+
+    <Spinner
+        android:id="@+id/group_spinner"
+        style="@style/my_spinner" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="21.NCC Unit to be enrolled in *" />
+
+    <Spinner
+        android:id="@+id/battalian_spinner"
+        style="@style/my_spinner" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="22.Institute *" />
+
+    <Spinner
+        android:id="@+id/inst_spinner"
+        style="@style/my_spinner" />
+
+    <Button
+        style="@style/my_bt"
+        android:id="@+id/next_button"
+        android:text="Save and Next"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/_5sdp"/>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/background"></LinearLayout>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.InstituteFormActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@color/red"
+        android:textAlignment="gravity"
+        android:text="Institution Form"/>
+
+    <TextView
+        style="@style/TitleTextView"
+        android:text="List Of Battalion:-"/>
+
+    <Spinner
+        android:id="@+id/list_of_batttalion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:entries="@array/institute_type"
+        android:minHeight="@dimen/_30sdp"></Spinner>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/number_student_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="Number OF Students"
+            android:imeActionId="6"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1"
+            android:inputType="number"
+            android:maxLength="5"
+            android:minHeight="@dimen/_40sdp"
+            android:paddingLeft="@dimen/_2sdp"
+            android:singleLine="true"
+            android:textColor="@color/gray" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/institute_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="Name OF Institute"
+            android:imeActionId="6"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1"
+            android:inputType="text"
+            android:minHeight="@dimen/_40sdp"
+            android:paddingLeft="@dimen/_2sdp"
+            android:singleLine="true"
+            android:textColor="@color/gray" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/avl_t_room_tv"
+        style="@style/TitleTextView"
+        android:text="Availability Of Teacher's Room:-"/>
+
+    <include
+        android:id="@+id/teachers_room_view"
+        layout="@layout/yes_no_card"/>
+
+    <TextView
+        android:id="@+id/avl_s_room_tv"
+        style="@style/TitleTextView"
+        android:text="Availability Of Store Room/Parade Ground:-"/>
+
+    <include
+        android:id="@+id/pared_view"
+        layout="@layout/yes_no_card"/>
+
+    <TextView
+        style="@style/TitleTextView"
+        android:text="Availability Of Bath Room:-"/>
+
+    <include
+        android:id="@+id/bath_room_view"
+        layout="@layout/yes_no_card"/>
+
+    <TextView
+        android:id="@+id/pared_tv"
+        style="@style/TitleTextView"
+        android:text="Short Range for firing in the vicinity:-"/>
+
+    <include
+        android:id="@+id/firing_range_view"
+        layout="@layout/yes_no_card"/>
+
+    <TextView
+        android:id="@+id/list_title"
+        style="@style/TitleTextView"
+        android:layout_width="422dp"
+        android:layout_height="265dp"
+        android:text="NOC By Socity/Board:-" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/HomeLinearLayoutTheam"
+            android:clickable="true"
+            android:id="@+id/bathroom_ll"
+            android:padding="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/bathroom_iv"
+                    style="@style/HomeImageViewTheam"
+                    android:src="@drawable/download" />
+
+                <View style="@style/HomeView" />
+
+                <TextView
+                    style="@style/HomeTextViewTheam"
+                    android:text="Upload Bathroom \n Image" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:id="@+id/ncc_form_ll"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/HomeLinearLayoutTheam"
+            android:padding="@dimen/_5sdp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/noc_ll"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/noc_iv"
+                    style="@style/HomeImageViewTheam"
+                    android:src="@drawable/download" />
+
+                <View
+                    style="@style/HomeView"/>
+
+                <TextView
+                    android:text="Upload NOC \n Form"
+                    style="@style/HomeTextViewTheam"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/TitleTextView"
+        android:text="Type Of Institute:-"/>
+
+    <Spinner
+        android:id="@+id/types_of_institute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:entries="@array/institute_type"
+        android:minHeight="@dimen/_30sdp"></Spinner>
+
+    <TextView
+        style="@style/TitleTextView"
+        android:text="Affiliation Related:-"/>
+
+    <EditText
+        android:id="@+id/aff_no_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:drawablePadding="@dimen/_5sdp"
+        android:hint="Affiliation Registration Number"
+        android:imeActionId="6"
+        android:imeOptions="actionUnspecified"
+        android:maxLines="1"
+        android:inputType="number"
+        android:minHeight="@dimen/_40sdp"
+        android:paddingLeft="@dimen/_2sdp"
+        android:singleLine="true"
+        android:textColor="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/HomeLinearLayoutTheam"
+            android:padding="@dimen/_5sdp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ins_doc"
+                    style="@style/HomeImageViewTheam"
+                    android:src="@drawable/download" />
+
+                <View
+                    style="@style/HomeView"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+       style="@style/SubmitButtonTheam"
+        android:id="@+id/submit_btn"
+        android:text="Submit"/>
+</LinearLayout>
+
+</ScrollView>
+</FrameLayout>

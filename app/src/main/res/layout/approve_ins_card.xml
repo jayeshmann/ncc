@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root"
+    android:background="@drawable/empty_boarder"
+    android:gravity="center_horizontal"
+    android:elevation="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <TextView
+            style="@style/HorizontalWeight"
+            android:layout_weight=".95"
+            android:id="@+id/ins_tv"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Name OF INSTITUTE"
+            android:textAlignment="gravity"
+            android:textColor="@color/Vilate"
+            android:textSize="@dimen/_14ssp" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            fancy:fb_defaultColor="@color/theme_color"
+            android:id="@+id/browse_bt"
+            android:visibility="gone"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_iconPosition="right"
+            fancy:fb_radius="10dp"
+            fancy:fb_text="Upload"
+            fancy:fb_textColor="#FFFFFF" />
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:layout_height="@dimen/_30sdp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/submit_bt"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:visibility="gone"
+            android:layout_gravity="left"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="@color/red"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_iconPosition="right"
+            fancy:fb_radius="10dp"
+            fancy:fb_text="Submit"
+            fancy:fb_textColor="#FFFFFF" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

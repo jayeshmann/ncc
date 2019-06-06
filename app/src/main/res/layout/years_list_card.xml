@@ -1,0 +1,13 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_6sdp"
+    android:background="@drawable/empty_boarder"
+    android:elevation="@dimen/_4sdp"
+    android:gravity="center"
+    android:padding="@dimen/_10sdp"
+    android:text="Test"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+    android:textColor="@color/green"
+    android:textSize="@dimen/_28sdp" />

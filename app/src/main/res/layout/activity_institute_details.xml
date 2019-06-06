@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"></LinearLayout>
+
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.InstituteDetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/red"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:weightSum="1.0">
+
+            <ImageView
+                style="@style/HorizontalWeight"
+                android:layout_weight=".2"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/frg_title"
+                style="@style/HorizontalWeight"
+                android:layout_weight=".7"
+                android:gravity="center"
+                android:text="Institute Form"
+                android:textAlignment="gravity"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/button1"
+                style="@style/HorizontalWeight"
+                android:layout_weight=".1"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/three_dots"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        style="@style/my_tv"
+        android:text="1: Name Of Institute"/>
+
+    <EditText
+        android:id="@+id/ins_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="2:Year of Establishment *"/>
+
+    <Spinner
+        android:id="@+id/est_year_et"
+        style="@style/my_spinner"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="3: Specialization *"/>
+
+    <EditText
+        android:id="@+id/spe_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="4: State"/>
+
+    <LinearLayout
+        style="@style/WrapMatchWeight"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Spinner
+            android:id="@+id/state_et"
+            android:layout_weight="1"
+            style="@style/my_et"/>
+
+        <Spinner
+            android:id="@+id/dis_et"
+            android:layout_weight="1"
+            style="@style/my_et"/>
+
+        <Spinner
+            android:id="@+id/add_et"
+            android:layout_weight="1"
+            style="@style/my_et"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/my_tv"
+        android:text="5: Locality:Rural/Urban"/>
+
+    <EditText
+        android:id="@+id/locality_et"
+        style="@style/my_et"/>
+
+
+    <TextView
+        style="@style/my_tv"
+        android:text="6: Institute Type"/>
+
+    <EditText
+        android:id="@+id/int_type_et"
+        style="@style/my_et"/>
+
+
+    <TextView
+        style="@style/my_tv"
+        android:text="7: Telephone No of Institution"/>
+
+    <EditText
+        android:id="@+id/tel_ins_et"
+        style="@style/my_et"/>
+
+
+    <TextView
+        style="@style/my_tv"
+        android:text="8: E-mail ID/Website"/>
+
+    <EditText
+        android:id="@+id/email_web_et"
+        style="@style/my_et"/>
+
+
+    <TextView
+        style="@style/my_tv"
+        android:text="9: Name of the Principal"/>
+
+    <EditText
+        android:id="@+id/name_of_pri_et"
+        style="@style/my_et"/>
+
+
+    <TextView
+        style="@style/my_tv"
+        android:text="10:  Contact Number of the Principal"/>
+
+    <EditText
+        android:id="@+id/con_number_et"
+        style="@style/my_et"/>
+
+
+    <TextView
+        style="@style/my_tv"
+        android:text="11: Management Type"/>
+
+    <EditText
+        android:id="@+id/mgt_type_et"
+        style="@style/my_et"/>
+
+
+    <TextView
+        style="@style/my_tv"
+        android:text="10: Contact Number of the Management"/>
+
+    <EditText
+        android:id="@+id/con_number_mgt_et"
+        style="@style/my_et"/>
+
+
+    <TextView
+        style="@style/my_tv"
+        android:text="11: Total Teachers"/>
+
+    <EditText
+        android:id="@+id/total_teachers_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="12: Total Enrolled students"/>
+
+    <EditText
+        android:id="@+id/total_en_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="13: Date Of NCC Rising"/>
+
+    <EditText
+        android:id="@+id/rising_date_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="14:NCC Enrolled students"/>
+
+    <EditText
+        android:id="@+id/ncc_en_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="15: Name Of ANO"/>
+
+    <EditText
+        android:id="@+id/ano_name_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="16: Distance from unit"/>
+
+    <EditText
+        android:id="@+id/unit_dis_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="17: Obstacle Training"/>
+
+    <EditText
+        android:id="@+id/obs_tr_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="18: Firing range"/>
+
+    <EditText
+        android:id="@+id/firing_range_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="19: Camp Site"/>
+
+    <EditText
+        android:id="@+id/camp_site_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="20: Tag ground"/>
+
+    <EditText
+        android:id="@+id/tag_ground_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="21: NCC store and office"/>
+
+    <EditText
+        android:id="@+id/ncc_store_et"
+        style="@style/my_et"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="22: Auditorium with projector"/>
+
+    <EditText
+        android:id="@+id/auditorium_et"
+        style="@style/my_et"/>
+
+    <Button
+       style="@style/my_bt"
+        android:text="Submit"/>
+
+</LinearLayout>
+
+    </ScrollView>
+    </FrameLayout>

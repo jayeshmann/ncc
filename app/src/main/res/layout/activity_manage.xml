@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="bottom|right"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:weightSum="1"
+    android:orientation="vertical"
+    tools:context=".activities.COManageActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:gravity="center"
+        android:background="@color/red"
+        android:weightSum="1">
+        <ImageView
+            style="@style/HorizontalWeight"
+            android:layout_weight=".2"
+            android:id="@+id/left_iv"
+            app:srcCompat="@drawable/left_arrow"/>
+        <TextView
+            android:id="@+id/title"
+            style="@style/HorizontalWeight"
+            android:textColor="@color/white"
+            android:layout_weight=".6"
+            android:textSize="@dimen/_18ssp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAlignment="gravity"
+            android:text="@string/list_of_candidates"/>
+        <ImageView
+            style="@style/HorizontalWeight"
+            android:layout_weight=".2"
+            android:id="@+id/right_iv"
+            app:srcCompat="@drawable/right_arrow"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+      style="@style/VerticalWeight"
+        android:id="@+id/list_view1"
+        android:layout_weight=".98">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        style="@style/VerticalWeight"
+        android:id="@+id/list_view2"
+        android:visibility="gone"
+        android:layout_weight=".98">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        style="@style/VerticalWeight"
+        android:id="@+id/list_view3"
+        android:visibility="gone"
+        android:layout_weight=".98">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_height="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:background="@color/green"
+        android:orientation="horizontal"
+        android:layout_weight=".02"
+        android:weightSum="3"
+        tools:context=".activities.COManageActivity">
+
+
+        <Button
+            android:id="@+id/mng_ano_btn"
+            style="@style/HorizontalWeight"
+            android:background="@color/green"
+            android:text="ANO"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/white"></LinearLayout>
+
+        <Button
+            android:id="@+id/mng_inst_btn"
+            style="@style/HorizontalWeight"
+            android:background="@color/green"
+            android:layout_weight="1"
+            android:text="Institute"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mng_cadet_btn"
+            style="@style/HorizontalWeight"
+            android:text="CADET"
+            android:background="@color/green"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:id="@+id/view_summary_btn"
+        android:visibility="visible"
+        android:text="View Summary"
+        android:onClick="viewSummary"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:background="@color/red"/>
+</LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="bottom|right"
+        fab:menu_fab_size="normal"
+        fab:menu_showShadow="true"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_colorNormal="@color/theme_color"
+        fab:menu_colorPressed="@color/theme_color"
+        fab:menu_colorRipple="#99FFFFFF"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="up"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_fab_label="Choose Filter">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/notification_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notification"
+            android:onClick="goNotification"
+            fab:fab_colorNormal="@color/theme_color"
+            fab:fab_size="mini"
+            fab:fab_label="Notifications" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:visibility="gone"
+            android:id="@+id/menu_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/filter"
+            android:onClick="goTouploadFilter"
+            fab:fab_colorNormal="@color/theme_color"
+            fab:fab_size="mini"
+            fab:fab_label="Upload Institute" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/filter"
+            android:onClick="goToInsFilter"
+            fab:fab_colorNormal="@color/theme_color"
+            fab:fab_size="mini"
+            fab:fab_label="Cadets By Institute" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/notification_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/notification"
+        android:visibility="gone"
+        android:onClick="goNotification"
+        fab:fab_colorNormal="@color/theme_color"
+        fab:fab_size="normal"
+        fab:fab_label="Notifications" />
+
+</FrameLayout>

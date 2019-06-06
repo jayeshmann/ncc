@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="cadetDetailsModels"
+            type="com.tsa.NCC_dte_punjab.models.CadetDetailsModels" />
+    </data>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".activities.CadetEnrollmentFormActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp">
+
+    <TextView
+        style="@style/my_title"
+        android:background="@color/red"
+        android:gravity="center"
+        android:text="NCC Related Details"
+        android:textAlignment="gravity"
+        android:textColor="@color/white"/>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    <TextView
+        style="@style/my_tv"
+        android:text="21: Have you ever been convicted by a criminal court?*" />
+
+    <TextView
+        android:id="@+id/convicted_tv"
+        android:text="@={cadetDetailsModels.convicted}"
+        style="@style/my_tv2" />
+
+
+    <TextView
+        style="@style/my_tv"
+        android:text="22:Name of School/College*" />
+
+    <TextView
+        android:id="@+id/school_tv1"
+        android:text="@={cadetDetailsModels.schoolName}"
+        style="@style/my_tv2"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="24. Stream *" />
+
+    <TextView
+        android:id="@+id/stream_tv"
+        android:text="@={cadetDetailsModels.stream}"
+        style="@style/my_tv2"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="25:Wing *" />
+
+    <TextView
+        android:id="@+id/wing_tv"
+        android:text="@={cadetDetailsModels.wing}"
+        style="@style/my_tv2"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="26: Are you are willing to be enrolled under the National Cadet Corps Act, 1948? *" />
+
+    <TextView
+        android:id="@+id/willing_tv"
+        android:text="@={cadetDetailsModels.willingToBeEnrolled}"
+        style="@style/my_tv2"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="27.Group HQ *" />
+
+    <TextView
+        android:id="@+id/group_tv"
+        android:text="@={cadetDetailsModels.hqName}"
+        style="@style/my_tv2" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="28.NCC Unit to be enrolled in *" />
+
+    <TextView
+        android:id="@+id/battalian_tv"
+        android:text="@={cadetDetailsModels.battalionName}"
+        style="@style/my_tv2" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="29.Institute *" />
+
+    <TextView
+        android:id="@+id/inst_tv"
+        android:text="@={cadetDetailsModels.insttName}"
+        style="@style/my_tv2" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="30. Have you ever previously applied for enrollment under the Act? *" />
+
+
+    <TextView
+        style="@style/my_tv2"
+        android:text="@={cadetDetailsModels.enrolledErlier}"
+        android:id="@+id/enrollment"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="31. Have you been dismissed from NCC/The Territorial Army/the Indian Armed Forces; Please	provide details ?*" />
+
+    <TextView
+        android:id="@+id/dismiss_tv"
+        android:text="@={cadetDetailsModels.dismissErlier}"
+        style="@style/my_tv2" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="32. Kin Name/Next of Kin *" />
+
+    <TextView
+        android:id="@+id/kin_name_tv"
+        android:text="@={cadetDetailsModels.kinName}"
+        style="@style/my_tv2" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="  33. Kin Relationship *" />
+
+    <TextView
+        android:id="@+id/kin_relation_tv"
+        android:text="@={cadetDetailsModels.kinRelationship}"
+        style="@style/my_tv2" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:inputType="number"
+        android:text="34. Kin Contact Number *" />
+
+    <TextView
+        android:id="@+id/kin_number_tv"
+        android:text="@={cadetDetailsModels.kinTelephone}"
+        style="@style/my_tv2" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="35. Kin Address *" />
+
+    <TextView
+        android:id="@+id/kin_address_tv"
+        android:text="@={cadetDetailsModels.kinAddress}"
+        style="@style/my_tv2" />
+
+    ////////////////////////////////////////////////////////////////////////////////////////////
+
+</LinearLayout>
+</ScrollView>
+</layout>

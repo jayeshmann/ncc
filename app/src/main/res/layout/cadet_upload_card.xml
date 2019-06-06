@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="@drawable/empty_boarder"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    /////////////////////////////////////////////////////////////////
+
+    /////////////////////////////////////////////////////////////////////////////
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+        /////////////////////////////////////////////
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/HorizontalWeight"
+                android:layout_weight=".2"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_4sdp"
+                android:text="Name:"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                style="@style/HorizontalWeight"
+                android:layout_weight=".8"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_4sdp"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/HorizontalWeight"
+                android:layout_weight=".2"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_4sdp"
+                android:text="Email:"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/email_tv"
+                style="@style/HorizontalWeight"
+                android:layout_weight=".8"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_4sdp"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/HorizontalWeight"
+                android:layout_weight=".2"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_4sdp"
+                android:text="Mobile:"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/mobile_tv"
+                style="@style/HorizontalWeight"
+                android:layout_weight=".8"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_4sdp"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/HorizontalWeight"
+                android:layout_weight=".2"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_4sdp"
+                android:text="Aadhaar:"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/aadhaar_tv"
+                style="@style/HorizontalWeight"
+                android:layout_weight=".8"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_4sdp"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/HorizontalWeight"
+                android:layout_weight=".2"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_4sdp"
+                android:text="Institute:"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/institute_tv"
+                style="@style/HorizontalWeight"
+                android:layout_weight=".8"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_4sdp"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+        ///////////////////////////////////////////
+    </LinearLayout>
+    /////////////////////////////////////////////////////////////////////////////
+    <Button
+        android:id="@+id/approved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/rounded_corner_button"
+        android:padding="@dimen/_5sdp"
+        android:text="Approved"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_6ssp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/red" />
+</LinearLayout>

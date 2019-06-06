@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="cadetDetailsModels"
+            type="com.tsa.NCC_dte_punjab.models.CadetDetailsModels" />
+    </data>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+<LinearLayout
+    android:padding="@dimen/_5sdp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Account Details"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        style="@style/my_title"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="36. Bank Name *"/>
+
+    <TextView
+        android:id="@+id/bank_name_tv"
+        android:text="@={cadetDetailsModels.bankName}"
+        style="@style/my_tv2"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="37. Banker’s detail/IFSC Code *"/>
+
+    <TextView
+        android:id="@+id/ifsc_tv"
+        android:text="@={cadetDetailsModels.ifscCode}"
+        style="@style/my_tv2"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:inputType="number"
+        android:text="38. Bank Acct No of Cadet/Parent *"/>
+
+    <TextView
+        android:id="@+id/acc_no_tv"
+        android:inputType="number"
+        android:text="@={cadetDetailsModels.accNo}"
+        style="@style/my_tv2"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="39. Aadhaar/UID No. (if allotted)"/>
+
+    <TextView
+        android:id="@+id/aadhar_tv"
+        android:text="@={cadetDetailsModels.aadhaarNo}"
+        style="@style/my_tv2"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="40. PAN Card No. (if allotted)"/>
+
+    <TextView
+        android:id="@+id/pan_tv"
+        android:text="@={cadetDetailsModels.panNo}"
+        style="@style/my_tv2"/>
+    ////////////////////////////////////////////////////////////////////////////////////////////
+
+</LinearLayout>
+</ScrollView>
+</layout>

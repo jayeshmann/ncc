@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+        <!--
+                <import type="com.tsa.NCC_dte_punjab.models.CadetDetailsModels" />
+        -->
+
+        <variable
+            name="cadetDetailsModels"
+            type="com.tsa.NCC_dte_punjab.models.CadetDetailsModels" />
+
+        <variable
+            name="activity"
+            type="com.tsa.NCC_dte_punjab.activities.ProfileActivity" />
+
+    </data>
+
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:weightSum="1.0">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_weight=".1"
+                android:background="@color/red"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:weightSum="1.0">
+
+                    <ImageView
+                        style="@style/HorizontalWeight"
+                        android:layout_weight=".2"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@drawable/logo" />
+
+                    <TextView
+                        android:id="@+id/frg_title"
+                        style="@style/HorizontalWeight"
+                        android:layout_weight=".68"
+                        android:gravity="center"
+                        android:text="Enrollment Form"
+                        android:textAlignment="gravity"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/physical_iv"
+                        style="@style/HorizontalWeight"
+                        android:layout_weight=".12"
+                        android:onClick="sendPhysicalMail"
+                        android:padding="@dimen/_3sdp"
+                        app:srcCompat="@drawable/ic_email_white_24dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".8"
+                android:background="@color/green"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/form1"
+                    layout="@layout/show_enrollment_form1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:visibility="visible"
+                    bind:cadetDetailsModels="@{cadetDetailsModels}" />
+
+                <include
+                    android:id="@+id/form2"
+                    layout="@layout/show_enrollment_form2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    bind:cadetDetailsModels="@{cadetDetailsModels}" />
+
+                <include
+                    android:id="@+id/form3"
+                    layout="@layout/show_enrollment_form3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    bind:cadetDetailsModels="@{cadetDetailsModels}" />
+
+                <include
+                    android:id="@+id/form4"
+                    layout="@layout/show_enrollment_form4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    bind:cadetDetailsModels="@{cadetDetailsModels}" />
+
+                <include
+                    android:id="@+id/doc1"
+                    layout="@layout/show_enrollment_form_card" />
+
+                <include
+                    android:id="@+id/doc2"
+                    layout="@layout/show_enrollment_form_card" />
+
+                <include
+                    android:id="@+id/doc3"
+                    layout="@layout/show_enrollment_form_card" />
+
+                <include
+                    android:id="@+id/doc4"
+                    layout="@layout/show_enrollment_form_card" />
+
+                <include
+                    android:id="@+id/doc5"
+                    layout="@layout/show_enrollment_form_card" />
+
+                <include
+                    android:id="@+id/doc6"
+                    layout="@layout/show_enrollment_form_card" />
+
+                <include
+                    android:id="@+id/doc7"
+                    layout="@layout/show_enrollment_form_card" />
+
+                <include
+                    android:id="@+id/doc8"
+                    layout="@layout/show_enrollment_form_card" />
+
+                <include
+                    android:id="@+id/doc9"
+                    layout="@layout/show_enrollment_form_card" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/pdf_feb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+       android:src="@android:drawable/ic_menu_save"/>
+
+</FrameLayout>
+</layout>
+

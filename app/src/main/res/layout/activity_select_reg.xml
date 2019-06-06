@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activities.SelectRegActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/red"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:weightSum="1.0">
+
+                <ImageView
+                    style="@style/HorizontalWeight"
+                    android:layout_weight=".2"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/frg_title"
+                    style="@style/HorizontalWeight"
+                    android:layout_weight=".7"
+                    android:gravity="center"
+                    android:text="Select Registration Type"
+                    android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/button1"
+                    style="@style/HorizontalWeight"
+                    android:layout_weight=".1"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/three_dots"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:src="@drawable/logo"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <RadioButton
+                android:id="@+id/ano_rb"
+                style="@style/my_rb"
+                android:checked="true"
+                android:text="Register As ANO" />
+
+            <RadioButton
+                android:id="@+id/cadet_rb"
+                style="@style/my_rb"
+                android:text="Register As Cadet" />
+
+            <RadioButton
+                android:id="@+id/institute_rb"
+                style="@style/my_rb"
+                android:text="Register As Institute" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/countinue_button"
+            style="@style/my_bt"
+            android:background="@drawable/rounded_corner_button_transparent"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Continue"
+            android:textColor="@color/red"/>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

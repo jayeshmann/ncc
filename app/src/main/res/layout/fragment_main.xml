@@ -1,0 +1,37 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+<LinearLayout
+    style="@style/VerticalWeight"
+    android:layout_weight=".1"
+    android:background="@color/red"
+    android:gravity="center"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/HorizontalWeight"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/list_of_years"
+        android:textAlignment="gravity"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/fragment_container"
+    style="@style/VerticalWeight"
+    android:layout_weight=".9"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusableInTouchMode="true">
+
+</LinearLayout>
+
+</LinearLayout>

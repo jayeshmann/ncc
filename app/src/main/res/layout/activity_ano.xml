@@ -1,0 +1,170 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/_30sdp"
+                android:paddingLeft="5dp"
+                android:text="ANO Informations:-"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/_20ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:id="@+id/dob_layout"
+                android:weightSum="1.0">
+
+                <ImageView
+                    style="@style/HorizontalWeight"
+                    android:layout_weight=".1"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/date" />
+
+                <TextView
+                    style="@style/HorizontalWeight"
+                    android:id="@+id/dob_tv"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight=".8"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:hint="Select Date of Birth"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/_15ssp"  />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/appointment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:hint="Enter Institute of Appointment"
+                    android:textColor="@color/black"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:editable="false"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/_30sdp"
+                android:paddingLeft="5dp"
+                android:text="Date Of Appointment:-"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/_15ssp" />
+
+            <LinearLayout
+                android:id="@+id/app_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:id="@+id/dob_iv"
+                    style="@style/HorizontalWeight"
+                    android:layout_weight=".1"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/date" />
+
+                <TextView
+                    android:id="@+id/app_dob_tv"
+                    style="@style/HorizontalWeight"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight=".8"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:hint="Select Date of Appointment"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/_15ssp" />
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:hint="Education Level"
+                android:textColor="@color/black"
+                android:id="@+id/qualification"></EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/_30sdp"
+                android:paddingLeft="5dp"
+                android:text="Select School/College:-"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/_15ssp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:id="@+id/school_spinner"/>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/rounded_corner_button"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+

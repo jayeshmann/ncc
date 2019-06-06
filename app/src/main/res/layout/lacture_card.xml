@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="@dimen/_180sdp"
+    android:orientation="horizontal"
+    android:minHeight="@dimen/_100sdp"
+    android:weightSum="1"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/empty_boarder"
+    android:elevation="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        style="@style/HorizontalWeight"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1.0">
+
+        <TextView
+           style="@style/VerticalWeight"
+            android:layout_weight=".35"
+            android:gravity="center"
+            android:id="@+id/lacture_name_tv"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            android:text="Mock Test1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Vilate"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="10dp"></LinearLayout>
+
+        <LinearLayout
+            style="@style/VerticalWeight"
+            android:weightSum="1"
+            android:layout_weight=".65">
+
+            <LinearLayout
+               style="@style/HorizontalWeight"
+                android:gravity="center|top"
+                android:orientation="vertical"
+                android:layout_weight=".5">
+
+                <TextView
+                    android:id="@+id/date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="20/05/2018"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/black" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"></LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/image_uploaded_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:enabled="false"
+                    android:textColor="@color/black"
+                    android:text="Image Uploaded"
+                    android:textAlignment="gravity" />
+
+                <CheckBox
+                    android:id="@+id/geo_tagged_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:enabled="false"
+                    android:textColor="@color/black"
+                    android:text="Geotagged"
+                    android:textAlignment="gravity" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/Vilate"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"></LinearLayout>
+
+            <LinearLayout
+                style="@style/HorizontalWeight"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wing_name"
+                    android:gravity="center"
+                    android:text="S/W"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="@dimen/_5sdp"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/camera_iv"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/cerclebackgroundpurple"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:src="@drawable/camera"
+                    android:textStyle="bold"></ImageView>
+
+                <ImageView
+                    android:id="@+id/location_iv"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:background="@drawable/cerclebackgroundgreen"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/location"
+                    android:textStyle="bold"></ImageView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/submit_btn"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/Vilate"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:text="Submit"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

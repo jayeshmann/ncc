@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="cadetDetailsModels"
+            type="com.tsa.NCC_dte_punjab.models.CadetDetailsModels" />
+    </data>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Educational Details"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        style="@style/my_title"/>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="18: Last Educational Qualification *"/>
+
+    <LinearLayout
+        style="@style/WrapMatchWeight"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/class_tv"
+            style="@style/my_tv2"
+            android:layout_weight="1"
+            android:text="@={cadetDetailsModels.className}" />
+
+
+
+        <TextView
+            android:id="@+id/marks_tv"
+            style="@style/my_tv2"
+            android:layout_weight="1"
+            android:text="@={cadetDetailsModels.marks}" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="19: Identification Mark 1 *"/>
+
+    <TextView
+        android:id="@+id/ide_mark1_tv"
+        android:text="@={cadetDetailsModels.identificationMark1}"
+        style="@style/my_tv2"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="20: Identification Mark 2 *"/>
+
+    <TextView
+        android:id="@+id/ide_mark2_tv"
+        android:text="@={cadetDetailsModels.identificationMark2}"
+        style="@style/my_tv2"/>
+
+</LinearLayout>
+</ScrollView>
+</layout>

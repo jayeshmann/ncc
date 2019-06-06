@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="1.0"
+        tools:context=".activities.CadetListActivity">
+
+       <!-- <LinearLayout
+            style="@style/VerticalWeight"
+            android:layout_weight=".1"
+            android:background="@color/red"
+            android:gravity="center"
+            android:weightSum="1">
+            <EditText
+                style="@style/HorizontalWeight"
+                android:id="@+id/search_string"
+                android:layout_weight=".8" />
+
+            <ImageView
+                style="@style/HorizontalWeight"
+                android:id="@+id/search_button"
+                android:padding="@dimen/_3sdp"
+                android:layout_weight=".2"
+                app:srcCompat="@drawable/search" />
+        </LinearLayout>-->
+
+        <LinearLayout
+            style="@style/VerticalWeight"
+            android:layout_weight=".1"
+            android:background="@color/red"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/left_iv"
+                style="@style/HorizontalWeight"
+                android:layout_weight=".2"
+                android:visibility="gone"
+                app:srcCompat="@drawable/left_arrow" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/HorizontalWeight"
+                android:layout_weight=".6"
+                android:gravity="center"
+                android:text="@string/list_of_candidates"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/right_iv"
+                style="@style/HorizontalWeight"
+                android:layout_weight=".2"
+                android:visibility="gone"
+                app:srcCompat="@drawable/right_arrow" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/candidate_list"
+            style="@style/VerticalWeight"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".8">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+
+            android:id="@+id/view_summary_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/red"
+            android:onClick="viewSummary"
+            android:text="View Summary"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            tools:visibility="visible"
+            android:visibility="gone"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="@color/theme_color"
+        fab:menu_colorPressed="@color/theme_color"
+        fab:menu_colorRipple="#99FFFFFF"
+        fab:menu_fab_label="Choose Filter"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_paddingBottom="@dimen/_2sdp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_position="right"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="@dimen/_2sdp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_showShadow="true"
+        tools:visibility="visible">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goNotification"
+            android:src="@drawable/notification"
+            fab:fab_colorNormal="@color/theme_color"
+            fab:fab_label="Notifications"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="filter"
+            android:src="@drawable/filter"
+            fab:fab_colorNormal="@color/theme_color"
+            fab:fab_label="No Filter"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goToLectureList"
+            android:src="@drawable/lectures"
+            fab:fab_colorNormal="@color/theme_color"
+            fab:fab_label="Lecture List"
+            fab:fab_size="mini" />
+
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="filter"
+            android:src="@drawable/approved"
+            fab:fab_colorNormal="@color/theme_color"
+            fab:fab_label="List Of Approved"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="filter"
+            android:src="@drawable/recommand"
+            fab:fab_colorNormal="@color/theme_color"
+            fab:fab_label="List Of Recommended"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="filter"
+            android:src="@drawable/pending"
+            fab:fab_colorNormal="@color/theme_color"
+            fab:fab_label="List Of Pending"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goToSearching"
+            android:src="@drawable/search"
+            fab:fab_colorNormal="@color/theme_color"
+            fab:fab_label="Search Cazdets"
+            fab:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</FrameLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activities.DoumentConfirmationActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/red"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:weightSum="1.0">
+
+            <ImageView
+                style="@style/HorizontalWeight"
+                android:layout_weight=".2"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/frg_title"
+                style="@style/HorizontalWeight"
+                android:layout_weight=".7"
+                android:gravity="center"
+                android:text="Required Documents To Fill Form"
+                android:textAlignment="gravity"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/button1"
+                style="@style/HorizontalWeight"
+                android:layout_weight=".1"
+                android:visibility="gone"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/three_dots" />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:textAlignment="gravity"
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/doc_upload_tv"
+        android:text="@string/upload_doc"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/accept_cb"
+        android:textColor="@color/red"
+        android:backgroundTint="@color/green"
+        android:buttonTint="@color/green"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14ssp"
+        android:text="I Have All documents Mention in the List"/>
+
+
+    <Button
+        style="@style/my_bt"
+        android:id="@+id/countinue_button"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/_5sdp"/>
+
+</LinearLayout>
+
+</ScrollView>

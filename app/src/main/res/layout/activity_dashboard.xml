@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+
+    </LinearLayout>
+
+    <!-- Stop auto focussing the EditText -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+    </LinearLayout>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_20sdp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_30sdp"
+        android:text="Register to join as..."
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_margin="@dimen/_5sdp"
+        android:textSize="@dimen/_16ssp"
+        android:drawablePadding="5dp"
+        android:editable="false"
+        android:textAlignment="gravity"/>
+
+    <Spinner
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@android:color/transparent"
+        android:entries="@array/category"></Spinner>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="5dp"
+        android:hint="Name"
+        android:textColor="@color/gray"
+        android:id="@+id/name_et"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:imeActionId="6"
+        android:imeOptions="actionUnspecified"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/_2sdp"
+        android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="5dp"
+        android:hint="Email ID"
+        android:id="@+id/email_et"
+        android:textColor="@color/gray"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:imeActionId="6"
+        android:imeOptions="actionUnspecified"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/_2sdp"
+        android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="5dp"
+        android:hint="Mobile Number"
+        android:id="@+id/mobile_et"
+        android:textColor="@color/gray"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:imeActionId="6"
+        android:imeOptions="actionUnspecified"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/_2sdp"
+        android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="5dp"
+        android:hint="Aadhaar Number"
+        android:textColor="@color/gray"
+        android:id="@+id/aadhar_et"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:imeActionId="6"
+        android:imeOptions="actionUnspecified"
+        android:inputType="number"
+        android:maxLength="12"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/_2sdp"
+        android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textColor="@color/theme_color"
+        android:background="@drawable/rounded_corner_button_transparent"
+        android:text="Submit"
+        android:textSize="@dimen/_16ssp"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20ssp"
+        android:textSize="@dimen/_15ssp"
+        android:visibility="gone"
+        android:textAlignment="gravity"
+        android:textColor="@color/red"
+        android:id="@+id/allready_filled_tv"
+        android:text="Allready Filled"/>
+
+</LinearLayout>
+
+</ScrollView>
+</FrameLayout>

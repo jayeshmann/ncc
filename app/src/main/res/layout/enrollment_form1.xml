@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activities.CadetEnrollmentFormActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_weight=".1"
+                android:background="@color/red"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:weightSum="1.0">
+
+                    <ImageView
+                        style="@style/HorizontalWeight"
+                        android:layout_weight=".2"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@drawable/logo" />
+
+                    <TextView
+                        android:id="@+id/frg_title"
+                        style="@style/HorizontalWeight"
+                        android:layout_weight=".7"
+                        android:gravity="center"
+                        android:text="Enrollment Form"
+                        android:textAlignment="gravity"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/button1"
+                        style="@style/HorizontalWeight"
+                        android:layout_weight=".1"
+                        android:padding="@dimen/_3sdp"
+                        android:src="@drawable/three_dots"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    style="@style/my_title"
+                    android:background="@color/red"
+                    android:text="Personal Details"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear_spinner"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Language "
+                    android:textColor="@color/black"
+                    android:textSize="13sp"/>
+
+
+                <!--<Spinner-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/spinner_language"-->
+                    <!--android:textAlignment="center"-->
+                    <!--&gt;-->
+
+                <!--</Spinner>-->
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_action_arrow_up"
+                        android:id="@+id/arrow_up"/>
+
+                </LinearLayout>
+
+                ////////////////////////////////////////////////////////////////////////////////////////////////
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/name" />
+
+                <LinearLayout
+                    style="@style/WrapMatchWeight"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <EditText
+                        android:id="@+id/first_name_et"
+                        style="@style/my_et"
+                        android:layout_weight="1"
+                        android:hint="@string/firstname" />
+
+                    <EditText
+                        android:id="@+id/mid_name_et"
+                        style="@style/my_et"
+                        android:layout_weight="1"
+                        android:hint="@string/midname" />
+
+                    <EditText
+                        android:id="@+id/last_name_et"
+                        style="@style/my_et"
+                        android:layout_weight="1"
+                        android:hint="@string/lastname" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/state_tv"
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/nationality" />
+
+                <Spinner
+                    android:id="@+id/nationality_sp"
+                    style="@style/my_spinner"
+                    android:entries="@array/nationality"></Spinner>
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/dateofbirth" />
+
+                <LinearLayout
+                    android:id="@+id/app_date_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:weightSum="1.0">
+
+                    <ImageView
+                        android:id="@+id/dob_iv"
+                        style="@style/HorizontalWeight"
+                        android:layout_weight=".1"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/date" />
+
+                    <TextView
+                        android:id="@+id/app_dob_tv"
+                        style="@style/HorizontalWeight"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight=".8"
+                        android:gravity="center_vertical"
+                        android:hint="Select Date of Birth"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/FatherGuardiansName" />
+
+                <LinearLayout
+                    style="@style/WrapMatchWeight"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <EditText
+                        android:id="@+id/p_first_name_et"
+                        style="@style/my_et"
+                        android:layout_weight="1"
+                        android:hint="@string/firstname" />
+
+                    <EditText
+                        android:id="@+id/p_mid_name_et"
+                        style="@style/my_et"
+                        android:layout_weight="1"
+                        android:hint="@string/midname" />
+
+                    <EditText
+                        android:id="@+id/p_last_name_et"
+                        style="@style/my_et"
+                        android:layout_weight="1"
+                        android:hint="@string/lastname" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/Mothername" />
+
+                <LinearLayout
+                    style="@style/WrapMatchWeight"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <EditText
+                        android:id="@+id/m_first_name_et"
+                        style="@style/my_et"
+                        android:layout_weight="1"
+                        android:hint="@string/firstname" />
+
+                    <EditText
+                        android:id="@+id/m_mid_name_et"
+                        style="@style/my_et"
+                        android:layout_weight="1"
+                        android:hint="@string/midname" />
+
+                    <EditText
+                        android:id="@+id/m_last_name_et"
+                        style="@style/my_et"
+                        android:layout_weight="1"
+                        android:hint="@string/lastname" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/State" />
+
+                <Spinner
+                    android:id="@+id/state_sp"
+                    style="@style/my_spinner"
+                    android:entries="@array/state" />
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/district" />
+
+                <Spinner
+                    android:id="@+id/district_sp"
+                    style="@style/my_spinner" />
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/city" />
+
+                <EditText
+                    android:id="@+id/vill_city_et"
+                    style="@style/my_et" />
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/LandMarks" />
+
+                <EditText
+                    android:id="@+id/landmark_et"
+                    style="@style/my_et" />
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/Pincode" />
+
+                <EditText
+                    android:id="@+id/pin_et"
+                    style="@style/my_et"
+                    android:inputType="number"
+                    android:maxLength="6" />
+
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/Mobile" />
+
+                <EditText
+                    android:id="@+id/mobile_no_et"
+                    style="@style/my_et"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/Email" />
+
+                <EditText
+                    android:id="@+id/email_et"
+                    style="@style/my_et" />
+
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="13:Photo"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/cadet_iv"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:src="@android:drawable/ic_search_category_default" />
+
+                    <TextView
+                        android:id="@+id/select_tv"
+                        style="@style/my_tv"
+                        android:gravity="left"
+                        android:text="@string/photo_ins" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/upload_bt"
+                    style="@style/my_bt"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:text="Choose File"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/BloodGroup" />
+
+                <Spinner
+                    android:id="@+id/blood_gp_spinner"
+                    style="@style/my_spinner" />
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/Parents" />
+
+                <Spinner
+                    android:id="@+id/income_spinner"
+                    style="@style/my_spinner"
+                    android:entries="@array/income" />
+
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/Sex" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/male_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/Male"
+                        android:textColor="@color/green" />
+
+                    <RadioButton
+                        android:id="@+id/female_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="@string/Female"
+                        android:textColor="@color/green" />
+                </RadioGroup>
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="16: Nearest Railway Station *" />
+
+                <EditText
+                    android:id="@+id/nearest_railway_et"
+                    style="@style/my_et" />
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/police" />
+
+                <EditText
+                    android:id="@+id/nearest_police_et"
+                    style="@style/my_et" />
+
+
+                <TextView
+                    style="@style/my_tv"
+                    android:gravity="left"
+                    android:text="@string/Educational" />
+
+                <LinearLayout
+                    style="@style/WrapMatchWeight"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Spinner
+                        android:id="@+id/class_spinner"
+                        style="@style/my_et"
+                        android:layout_weight="1"
+                        android:hint="class" />
+
+                    <EditText
+                        android:id="@+id/marks_et"
+                        style="@style/my_et"
+                        android:layout_weight="1"
+                        android:hint="Marks in %"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/next_button"
+                    style="@style/my_bt"
+                    android:layout_margin="20dp"
+                    android:text="@string/Submit"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

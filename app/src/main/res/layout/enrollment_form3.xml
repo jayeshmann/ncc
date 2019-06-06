@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activities.CadetEnrollmentFormActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/background"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/red"
+        android:layout_weight=".1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:weightSum="1.0">
+
+            <ImageView
+                style="@style/HorizontalWeight"
+                android:layout_weight=".2"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/frg_title"
+                style="@style/HorizontalWeight"
+                android:layout_weight=".7"
+                android:gravity="center"
+                android:text="Enrollment Form"
+                android:textAlignment="gravity"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/button1"
+                style="@style/HorizontalWeight"
+                android:layout_weight=".1"
+                android:padding="@dimen/_3sdp"
+                android:visibility="gone"
+                android:src="@drawable/three_dots" />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:layout_height="match_parent">
+
+        <TextView
+            style="@style/my_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:text="NCC Related Details"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    <TextView
+        style="@style/my_tv"
+        android:text="@string/convicted" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/convicted_yes_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/yes"
+            android:textColor="@color/green" />
+
+        <RadioButton
+            android:id="@+id/convicted_no_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/no"
+            android:textColor="@color/green" />
+
+    </RadioGroup>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="@string/circumstances" />
+
+    <EditText
+        android:id="@+id/for_what_et"
+        style="@style/my_et" />
+
+        <TextView
+            style="@style/my_tv"
+            android:gravity="left"
+            android:text="@string/Documents"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/doc_iv"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:src="@android:drawable/ic_search_category_default" />
+
+            <TextView
+                android:id="@+id/select_tv"
+                style="@style/my_tv"
+                android:gravity="left"
+                android:text="Choose Documents" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/upload_bt"
+            style="@style/my_bt"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:text="Choose File"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/school_tv"
+        style="@style/my_tv"
+        android:text="@string/School" />
+
+    <EditText
+        android:id="@+id/school_et"
+        style="@style/my_et"/>
+
+    <TextView
+        android:id="@+id/stream_tv"
+        style="@style/my_tv"
+        android:text="@string/Stream" />
+
+    <Spinner
+        android:id="@+id/stream_et"
+        style="@style/my_spinner"
+        android:entries="@array/stream"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:text="@string/Wing" />
+
+    <Spinner
+        android:id="@+id/wing_sp"
+        style="@style/my_spinner"
+        android:entries="@array/wing"/>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="@string/National" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/willing_yes_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/yes"
+            android:textColor="@color/green" />
+
+        <RadioButton
+            android:id="@+id/willing_no_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/no"
+            android:textColor="@color/green" />
+    </RadioGroup>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="@string/group" />
+
+    <Spinner
+        android:id="@+id/group_spinner"
+        style="@style/my_spinner" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="@string/enrolled" />
+
+    <Spinner
+        android:id="@+id/battalian_spinner"
+        style="@style/my_spinner" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="@string/Institute" />
+
+    <Spinner
+        android:id="@+id/inst_spinner"
+        style="@style/my_spinner" />
+
+        <TextView
+            style="@style/my_tv"
+            android:gravity="left"
+            android:text="@string/Year" />
+
+        <Spinner
+            android:id="@+id/ncc_year"
+            style="@style/my_spinner" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="@string/previously" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/enrollment_yes_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Yes"
+            android:textColor="@color/green" />
+
+        <RadioButton
+            android:id="@+id/enrollment_no_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="No"
+            android:textColor="@color/green" />
+    </RadioGroup>
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="@string/previously" />
+
+    <EditText
+        android:id="@+id/dismiss_et"
+        style="@style/my_et" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="@string/Next" />
+
+    <EditText
+        android:id="@+id/kin_name"
+        style="@style/my_et" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="@string/Relationship" />
+
+    <EditText
+        android:id="@+id/kin_relation"
+        style="@style/my_et" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="@string/Contact" />
+
+    <EditText
+        android:id="@+id/kin_number"
+        android:inputType="number"
+        android:maxLength="10"
+        style="@style/my_et" />
+
+    <TextView
+        style="@style/my_tv"
+        android:gravity="left"
+        android:text="@string/Address" />
+
+    <EditText
+        android:id="@+id/kin_address"
+        style="@style/my_et" />
+
+    ////////////////////////////////////////////////////////////////////////////////////////////
+
+    <Button
+        style="@style/my_bt"
+        android:id="@+id/next_button"
+        android:text="@string/saveand"
+        android:layout_weight=".1"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/_5sdp"/>
+
+</LinearLayout>
+</LinearLayout>
+    </ScrollView>
+</FrameLayout>

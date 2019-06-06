@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".activities.CadetEnrollmentFormActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_weight=".1"
+                android:background="@color/red"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:weightSum="1.0">
+
+                    <ImageView
+                        style="@style/HorizontalWeight"
+                        android:layout_weight=".2"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@drawable/logo" />
+
+                    <TextView
+                        android:id="@+id/frg_title"
+                        style="@style/HorizontalWeight"
+                        android:layout_weight=".7"
+                        android:gravity="center"
+                        android:text="Enrollment Form"
+                        android:textAlignment="gravity"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/button1"
+                        style="@style/HorizontalWeight"
+                        android:layout_weight=".1"
+                        android:padding="@dimen/_3sdp"
+                        android:src="@drawable/three_dots"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+            <TextView
+                style="@style/my_title"
+                android:background="@color/red"
+                android:text="Account Details"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/my_tv"
+                android:text="@string/bankname" />
+
+            <EditText
+                android:id="@+id/bank_name_et"
+                style="@style/my_et" />
+
+            <TextView
+                style="@style/my_tv"
+                android:inputType="number"
+                android:text="@string/AccountNo" />
+
+            <EditText
+                android:id="@+id/acc_no_et"
+                style="@style/my_et"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/my_tv"
+                android:text="@string/ifsc" />
+
+            <EditText
+                android:id="@+id/ifsc_et"
+                style="@style/my_et" />
+
+
+            <!--<TextView
+                style="@style/my_tv"
+                android:text="39. Aadhaar/UID No.*" />
+
+            <EditText
+                android:id="@+id/aadhar_et"
+                style="@style/my_et" />-->
+
+            <TextView
+                style="@style/my_tv"
+                android:text="@string/pancard" />
+
+            <EditText
+                android:id="@+id/pan_et"
+                style="@style/my_et" />
+            ////////////////////////////////////////////////////////////////////////////////////////////
+
+            <Button
+                android:id="@+id/next_button"
+                style="@style/my_bt"
+                android:layout_weight=".1"
+                android:layout_marginTop="10dp"
+                android:text="@string/Submits"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

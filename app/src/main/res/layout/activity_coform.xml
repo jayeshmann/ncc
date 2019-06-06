@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".activities.COFormActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@color/red"
+        android:textAlignment="gravity"
+        android:text="Fill Data By CO"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_30sdp"
+        android:text="GP HQ"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_margin="@dimen/_5sdp"
+        android:textSize="@dimen/_16ssp"
+        android:drawablePadding="5dp"
+        android:editable="false"
+        android:textAlignment="gravity"/>
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/gp_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:entries="@array/category"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_30sdp"
+        android:text="Batallion"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_margin="@dimen/_5sdp"
+        android:textSize="@dimen/_16ssp"
+        android:drawablePadding="5dp"
+        android:editable="false"
+        android:textAlignment="gravity"/>
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/batallion_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:entries="@array/category"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_30sdp"
+        android:text="Institute Name"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_margin="@dimen/_5sdp"
+        android:textSize="@dimen/_16ssp"
+        android:drawablePadding="5dp"
+        android:editable="false"
+        android:textAlignment="gravity"/>
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/institute_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:entries="@array/category"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_30sdp"
+        android:text="Department"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_margin="@dimen/_5sdp"
+        android:textSize="@dimen/_16ssp"
+        android:drawablePadding="5dp"
+        android:editable="false"
+        android:textAlignment="gravity"/>
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/dept_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:entries="@array/category"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:hint="Camp"
+            android:textColor="@color/gray"
+            android:id="@+id/camp_et"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:imeActionId="6"
+            android:imeOptions="actionUnspecified"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_2sdp"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textColor="@color/theme_color"
+        android:background="@drawable/rounded_corner_button"
+        android:text="Submit"
+        android:textSize="@dimen/_16ssp"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+</LinearLayout>

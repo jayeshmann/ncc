@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">नक्स दते - पंजाब</string>
+    <string name="name">नाम*</string>
+    <string name="firstname">पहला नाम</string>
+    <string name="lastname">अंतिम नाम</string>
+    <string name="midname">मध्य नाम</string>
+    <string name="nationality">2 : राष्ट्रीयता*</string>
+    <string name="dateofbirth">3 : जन्म की तारीख*</string>
+    <string name="FatherGuardiansName">4 : पिता अभिभावक का नाम *</string>
+    <string name="Mothername">5: मां का नाम *</string>
+    <string name="State">6: राज्य*</string>
+    <string name="district">7: जिला *</string>
+    <string name="city">8:शहर/Vill *</string>
+    <string name="LandMarks">9:स्थलों *</string>
+    <string name="Pincode">10:
+पिन कोड *</string>
+    <string name="Mobile">11: मोबाइल *</string>
+    <string name="Email">12:ईमेल </string>
+    <string name="BloodGroup">13: रक्त समूह *</string>
+    <string name="Parents">14: माता-पिता की आय *</string>
+    <string name="Sex">15: लिंग *</string>
+    <string name="Male">पुरुष *</string>
+    <string name="Female">महिला *</string>
+    <string name="Railway">16:
+निकटतम रेलवे स्टेशन  *</string>
+    <string name="police">17:
+नजदीकी पुलिस स्टेशन *</string>
+
+    <string name="Educational">18: अंतिम शैक्षिक योग्यता *</string>
+    <string name="Submit">जमा करें</string>
+    <string name="Qualification">18: अंतिम शैक्षिक योग्यता *</string>
+    <string name="Marks">में चिह्नित करता है %</string>
+    <string name="Identification">19: पहचान </string>
+    <string name="Mark2">20: निशान २ </string>
+    <string name="Save">सहेजें और अगला </string>
+    <string name="convicted">21:
+क्या आपको कभी आपराधिक अदालत ने दोषी ठहराया है?*</string>
+    <string name="Yes">हाँ </string>
+    <string name="No">नहीं </string>
+    <string name="circumstances">22:
+यदि हाँ, तो किन परिस्थितियों में और क्या सजा सुनाई गई थी?*</string>
+    <string name="Documents">23:
+परिस्थितियाँ संबंधित दस्तावेज *</string>
+
+    <string name="School">23:स्कूल / कॉलेज का नाम*</string>
+    <string name="Stream">24. धारा </string>
+    <string name="Wing">25:विंग * </string>
+    <string name="National">26:राष्ट्रीय कैडेट कोर अधिनियम, 1948 के तहत नामांकित होने के लिए तैयार हैं? * </string>
+    <string name="group">27.समूह मुख्यालय * </string>
+    <string name="enrolled">28.एनसीसी यूनिट में नामांकित होना * </string>
+    <string name="Institute">29.संस्थान* </string>
+    <string name="Year">30.एनसीसी वर्ष * </string>
+    <string name="previously">31.
+क्या आपने पहले अधिनियम के तहत नामांकन के लिए आवेदन किया है? *</string>
+    <string name="Next">32. रिश्तेदार का नाम* </string>
+    <string name="Relationship">33. परिजन संबंध *</string>
+    <string name="Contact">34. परिजन संपर्क नंबर *</string>
+    <string name="Address">35. परिजन का पता *</string>
+    <string name="saveand">सहेजें और अगला</string>
+    <string name="bankname">36. बैंक का नाम *</string>
+    <string name="AccountNo">37.बैंक खाता नम्बर. of Cadet/Parent *</string>
+    <string name="ifsc">38.बैंक IFSC कॉड ऑफ़ कैडेट/Parent *</string>
+    <string name="pancard">40. पैन कार्ड नं</string>
+    <string name="DECLARATION">
+नामांकन के लिए स्वीकृति पर निर्णय</string>
+    <string name="ACCEPTANCE">नामांकन के लिए स्वीकृति पर निर्णय</string>
+    <string name="ENROLMENT">नामांकन के लिए स्वीकृति पर निर्णय</string>
+    <string name="india">नामांकन के लिए स्वीकृति पर निर्णय</string>
+
+    <string name="Upload">कैडेट हस्ताक्षर अपलोड करें</string>
+    <string name="Choose">
+फ़ाइल का चयन</string>
+    <string name="Submits">जमा करें</string>
+
+
+</resources>

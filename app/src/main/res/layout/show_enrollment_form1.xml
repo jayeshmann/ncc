@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="cadetDetailsModels"
+            type="com.tsa.NCC_dte_punjab.models.CadetDetailsModels" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context=".activities.CadetEnrollmentFormActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/cadet_iv1"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/cadet_name_tv"
+                    style="@style/my_tv2"
+                    android:layout_weight="1"
+                    android:text="@={cadetDetailsModels.name}" />
+            </LinearLayout>
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////
+
+            <TextView
+                style="@style/my_tv"
+                android:text="1: Enrollment Number" />
+
+            <TextView
+                android:id="@+id/enroll_no"
+                style="@style/my_tv2"
+                android:text="@={cadetDetailsModels.registrationNo}"></TextView>
+
+            <TextView
+                style="@style/my_tv"
+                android:text="2: Nationality" />
+
+            <TextView
+                android:id="@+id/nationality_tv"
+                style="@style/my_tv2"
+                android:text="@={cadetDetailsModels.nationality}"></TextView>
+
+            <TextView
+                style="@style/my_tv"
+                android:gravity="left"
+                android:text="3: Date Of Birth" />
+
+
+            <TextView
+                android:id="@+id/dob_tv"
+                style="@style/my_tv2"
+                android:text="@={cadetDetailsModels.dob}" />
+
+
+            <TextView
+                style="@style/my_tv"
+                android:gravity="left"
+                android:text="4: Father's/Guardian's Name" />
+
+            <TextView
+                android:id="@+id/p_name_tv"
+                style="@style/my_tv2"
+                android:layout_weight="1"
+                android:text="@={cadetDetailsModels.fatherName}" />
+
+            <TextView
+                style="@style/my_tv"
+                android:gravity="left"
+                android:text="5: Mother's Name" />
+
+            <TextView
+                android:id="@+id/m_name_tv"
+                style="@style/my_tv2"
+                android:text="@={cadetDetailsModels.motherName}" />
+
+            <TextView
+                style="@style/my_tv"
+                android:gravity="left"
+                android:text="6: State" />
+
+            <TextView
+                android:id="@+id/state_tv"
+                style="@style/my_tv2"
+                android:text="@={cadetDetailsModels.stateName}" />
+
+            <TextView
+                style="@style/my_tv"
+                android:gravity="left"
+                android:text="7: District" />
+
+            <TextView
+                android:id="@+id/district_tv"
+                style="@style/my_tv2"
+                android:text="@={cadetDetailsModels.districtName}" />
+
+            <TextView
+                style="@style/my_tv"
+                android:gravity="left"
+                android:text="8:City/Vill" />
+
+            <TextView
+                android:id="@+id/vill_city_tv"
+                style="@style/my_tv2"
+                android:text="@={cadetDetailsModels.city}" />
+
+            <TextView
+                style="@style/my_tv"
+                android:gravity="left"
+                android:text="9:Land Marks" />
+
+            <TextView
+                android:id="@+id/landmark_tv"
+                style="@style/my_tv2"
+                android:text="@={cadetDetailsModels.landmark}" />
+
+            <TextView
+                style="@style/my_tv"
+                android:gravity="left"
+                android:text="10: Pincode" />
+
+            <TextView
+                android:id="@+id/pin_tv"
+                style="@style/my_tv2"
+                android:text="@={cadetDetailsModels.pin}" />
+
+
+            <TextView
+                style="@style/my_tv"
+                android:gravity="left"
+                android:text="11: Mobile Number" />
+
+            <TextView
+                android:id="@+id/mobile_no_tv"
+                style="@style/my_tv2"
+                android:text="@={cadetDetailsModels.mobile}" />
+
+            <TextView
+                style="@style/my_tv"
+                android:gravity="left"
+                android:text="12:Email" />
+
+            <TextView
+                android:id="@+id/email_tv"
+                style="@style/my_tv2"
+                android:text="@={cadetDetailsModels.email}" />
+
+
+            <TextView
+                style="@style/my_tv"
+                android:gravity="left"
+                android:text="13:NCC Year" />
+
+            <TextView
+                android:id="@+id/ncc_year_iv"
+                style="@style/my_tv2"
+                android:text="@={cadetDetailsModels.nccYear}" />
+
+            <TextView
+                style="@style/my_tv"
+                android:gravity="left"
+                android:text="14: Blood Group" />
+
+            <TextView
+                android:id="@+id/blood_gp_tv"
+                style="@style/my_tv2"
+                android:text="@={cadetDetailsModels.bloodGroup}" />
+
+
+            <TextView
+                style="@style/my_tv"
+                android:gravity="left"
+                android:text="15: Sex" />
+
+            <TextView
+                android:id="@+id/gender_tv"
+                style="@style/my_tv2"
+                android:text="@={cadetDetailsModels.gender}" />
+
+            <TextView
+                style="@style/my_tv"
+                android:gravity="left"
+                android:text="16: Nearest Railway Station" />
+
+            <TextView
+                android:id="@+id/nearest_railway_tv"
+                style="@style/my_tv2"
+                android:text="@={cadetDetailsModels.nearestRailwayStation}" />
+
+            <TextView
+                style="@style/my_tv"
+                android:gravity="left"
+                android:text="17: Nearest Police Station" />
+
+            <TextView
+                android:id="@+id/nearest_police_tv"
+                style="@style/my_tv2"
+                android:text="@={cadetDetailsModels.nearestPoliceStation}" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

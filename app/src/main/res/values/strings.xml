@@ -1,0 +1,473 @@
+<resources>
+    <string name="app_name">NCC Dte - Punjab</string>
+
+
+    <string-array name="CadetName">
+        <item>Hindi</item>
+        <item>English</item>
+
+
+    </string-array>
+
+    ////////////////////////////////////////////////////////////////////////////////
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    /////////////////////////////////////////////////////////////////////////////////
+
+    <!--Messages Structure-->
+    <string name="approved">Approved</string>
+    <string name="approve">Approve</string>
+
+    <string name="recommanded">Recommended</string>
+    <string name="recommand">Recommend</string>
+
+    <string name="recommanded_msg">Successfully Recommended</string>
+
+    <string name="wating">Pending</string>
+
+    <!--Registration Form Of Cadet-->
+
+    <string name="name">Name*</string>
+    <string name="firstname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="midname">Mid name</string>
+    <string name="nationality">2 : Nationality*</string>
+    <string name="dateofbirth">3 : Date Of birth*</string>
+    <string name="FatherGuardiansName">4 : Fathers/Guardians Name *</string>
+    <string name="Mothername">5: Mothers Name *</string>
+    <string name="State">6: State *</string>
+    <string name="district">7: District *</string>
+    <string name="city">8:City/Vill *</string>
+    <string name="LandMarks">9:Land Marks *</string>
+    <string name="Pincode">10: Pincode *</string>
+    <string name="Mobile">11: Mobile Number *</string>
+    <string name="Email">12:Email </string>
+    <string name="BloodGroup">13: Blood Group *</string>
+    <string name="Parents">14: Parents Income *</string>
+    <string name="Sex">15: Sex *</string>
+    <string name="Male">Male *</string>
+    <string name="Female">Female *</string>
+    <string name="Railway">16: Nearest Railway Station  *</string>
+    <string name="police">17: Nearest Police Station *</string>
+
+    <string name="Educational">18: Last Educational Qualification *</string>
+    <string name="Submit">Submit</string>
+    <string name="Qualification">18: Last Educational Qualification *</string>
+    <string name="Marks">Marks in %</string>
+    <string name="Identification">19: Identification Mark 1 </string>
+    <string name="Mark2">20: Identification Mark 2 </string>
+    <string name="Save">Save and Next </string>
+    <string name="convicted">21: Have you ever been convicted by a criminal court?*</string>
+    <string name="Yes">Yes </string>
+    <string name="No">No </string>
+    <string name="circumstances">22:If Yes, in what circumstances and what was the sentence?*</string>
+    <string name="Documents">23:circumstances Related Documents *</string>
+
+    <string name="School">23:Name of School/College*</string>
+    <string name="Stream">24. Stream </string>
+    <string name="Wing">25:Wing * </string>
+    <string name="National">26:willing to be enrolled under the National Cadet Corps Act, 1948? * </string>
+    <string name="group">27.Group HQ * </string>
+    <string name="enrolled">28.NCC Unit to be enrolled in * </string>
+    <string name="Institute">29.Institute * </string>
+    <string name="Year">30.NCC Year * </string>
+    <string name="previously">31. Have you ever previously applied for enrollment under the Act? *</string>
+    <string name="Next">32. Name of/Next of Kin* </string>
+    <string name="Relationship">33. Kin Relationship *</string>
+    <string name="Contact">34. Kin Contact Number *</string>
+    <string name="Address">35. Kin Address *</string>
+    <string name="saveand">Save and Next</string>
+    <string name="bankname">36. Bank Name *</string>
+    <string name="AccountNo">37. Bank Account No. of Cadet/Parent *</string>
+    <string name="ifsc">38.Bank IFSC Cod of Cadet/Parent *</string>
+    <string name="pancard">40. PAN Card No</string>
+    <string name="DECLARATION">DECLARATION ON ACCEPTANCE FOR ENROLMENT</string>
+    <string name="ACCEPTANCE">DECLARATION ON ACCEPTANCE FOR ENROLMENT</string>
+    <string name="ENROLMENT">DECLARATION ON ACCEPTANCE FOR ENROLMENT</string>
+    <string name="india">DECLARATION ON ACCEPTANCE FOR ENROLMENT</string>
+
+    <string name="Upload">Upload Cadet Signature</string>
+    <string name="Choose">Choose File</string>
+    <string name="Submits">Submit</string>
+
+
+
+
+
+
+    <string-array name="dialog_multi_choice_array">
+        <item>Name</item>
+        <item>Email</item>
+        <item>Mobile</item>
+        <item>Registration Number</item>
+    </string-array>
+
+    <!-- strings for dialog -->
+    <string name="string_permission_help">Help</string>
+    <string name="string_permission_help_text">The permission is missing.\n\nTo grant this permission click on Settings, then Permissions and turn the permission on.\n\nThen click back twice to return to the app</string>
+    <string name="string_permission_quit">Exit App</string>
+    <string name="string_settings">Settings</string>
+
+    <string-array name="category">
+        <item>--Select--</item>
+        <item>Cadet</item>
+        <item>ANO</item>
+        <item>Institute</item>
+    </string-array>
+
+
+    <string-array name="institute_type">
+        <item>--Select--</item>
+        <item>Private</item>
+        <item>Governmet</item>
+        <item>Governmented</item>
+    </string-array>
+
+
+    <string name="aim1">
+         <![CDATA[<p>
+        The ‘Aims’ of the NCC laid out in 1988 have stood the test of time and continue to meet the requirements expected
+        of it in the current socio–economic scenario of the country. The NCC aims at developing character, comradeship,
+        discipline, a secular outlook, the spirit of adventure and ideals of selfless service amongst young citizens.
+        Further, it aims at creating a pool of organized, trained and motivated youth with leadership qualities in all walks
+        of life, who will serve the Nation regardless of which career they choose. Needless to say,
+        the NCC also provides an environment conducive to motivating young Indians to join the armed forces.
+         </p>]]>
+    </string>
+
+    <string name="aim2">
+         <![CDATA[<p>
+       To Create a Human Resource of Organized, Trained and Motivated Youth,
+       To Provide Leadership in all Walks of life and be Always Available for the Service of the Nation.
+       To Provide a Suitable Environment to Motivate the Youth to Take Up a Career in the Armed Forces.
+         </p>]]>
+    </string>
+
+    <string name="aim3">
+         <![CDATA[<p>
+      To Develop Character, Comradeship, Discipline, Leadership, Secular Outlook, Spirit of Adventure,
+      and Ideals of Selfless Service amongst the Youth of the Country.  </p>]]>
+    </string>
+
+    <string name="pledge">
+         <![CDATA[
+     <h4><b>NCC PLEDGE</b></h4>
+
+<p>WE THE CADET OF THE NATIONAL CADET CORPS,<br><br>
+DO SOLOEMNLY PLEDGE THAT WE SHALL ALWAYS UPHOLD THE UNITY OF INDIA.<br><br>
+WE RESOLVE TO BE DISCIPLINED AND RESPONSIBLE CITIZEN OF OUR NATION.<br><br>
+WE SHALL UNDERTAKE POSITIVE COMMUNITY SERVICE IN THE SPIRIT OF SELFLESSNESS<br>
+AND CONCERN FOR OUR FELLOW BEINGS.</p>
+
+]]>
+    </string>
+
+    <string name="intro_frg1">
+         <![CDATA[
+ <p>
+        The Cadet Corps Committee which was formed on 29 Sep 1946 with Pt HN Kunzru as chairman held six meetings in South Block,
+        New Delhi.\t\t
+        At the same time, Pt HN Kunzru formed sub-committees which were sent on study tours in all the main provinces of pre-independent
+        India including provinces which are now located in Bangladesh and Pakistan.
+        One sub-committee was also sent on tour to Great Britain and France from 15 Feb 1947 to 31 Mar 1947 to study the Youth
+        and Cadet organisations in those countries.<br><br>
+
+
+        The Cadet Corps Committee carried out exhaustive study of the problem of youth in India.
+        Its sub-committees after their tour at home and abroad submitted their report to the Government of India in Mar 1947.
+        Soon after the report was submitted, a far reaching political development began to impact the country, due to which the
+        Cadet Corps Scheme had to be kept in abeyance. The religious strife which then was at its zenith, ultimately led to the
+        partition of the country into India and Pakistan.<br><br>
+
+
+       On the stroke of midnight of 14/15 Aug 1947, India achieved her independence.
+       Immediately after independence, India was confronted with problems of formidable magnitude concerning not only
+       repatriation of millions of displaced persons from Pakistan but also a full scale invasion of Kashmir by the Armed
+       tribesmen supported by Pakistan. The armed forces had to rush to retrieve Kashmir at a time when they were already
+       pre-occupied with the internal problem of maintaining law and order during the country's initial stage of consolidation.<br><br>
+
+
+       The war in Kashmir and the consequent loss of a portion of Indian territory; the open support of Western Powers to Pakistan
+       in the Security Council of the United Nations, made it more than evident to the Indian leaders that they not only had to strengthen
+       the Armed Forces but also create sufficient strength of reserves, who could take up arms, when required.
+       The gravity of time and event found expression in the Indian Legislature through anxious and pressing demand for military training of
+       young men and women throughout the country.</p>
+]]>
+    </string>
+
+    <string name="intro_frg2">
+  <![CDATA[<p>
+ At this juncture, Prime Minister PtJawaharLal Nehru at the behest of SardarBaldev Singh, the then Defence Minister and
+ SardarVallabhbhai Patel, then Home Minister, took out the Kunzuru Committee Report for a serious studyfrom the shelves of
+ the Defence Department. On 05 Dec 1947, after being approved by the Defence Committee the copy of the Cadet Corps Committee
+ Report was sent to the Chief Secretaries and Chief Commissioners of all Provincial Govts (now called State Govts) for
+ their comments. The consent of Provincial Govts were required because they were responsible for the administration of the
+ educational institutions in their respective provinces and thus the success of the Cadet Corps scheme largely depended on
+ their initiative. Replies received from the provinces in Jan 1948, show that they all agreed in principal with the Cadet
+ Corps Scheme submitted by the Kunzuru Committee.</p>]]>
+    </string>
+
+    <string name="moto">
+         <![CDATA[
+         <h4><b>MOTTO OF NCC:Unity and Discipline</b></h4>
+    <p>The need for having motto for the Corps was discussed in the 11th Central Advisory Committee (CAC) meeting held
+    on 11 Aug 1978. The mottos suggested were "Duty and Discipline"; "Duty, Unity and Discipline"; "Duty and Unity";
+    "Unity and Discipline". The final decision for selection of
+    <b>"Unity and Discipline"</b> as motto for the NCC was taken in the 12th CAC meeting held on 12 Oct 1980.</p>]]>
+    </string>
+
+    <string name="core">
+
+         <![CDATA[
+    <h4>CORE VALUES</h4>
+    <b>The NCC is a responsive, learning and continuously evolving organization. Its activity is guided by certain core values that we endeavour to instill among all ranks of the NCC. These include the following:</b>
+
+<p><span><strong>(A)</strong> A sense of patriotic commitment to encourage cadets to contribute to national development.</span></p>
+<p><span><strong>(B) </strong> Respect for diversities in religion, language, culture, ethnicity, life style and habitat to instill a sense of National unity and social cohesion.</span></p>
+<p><span><strong>(C)</string>  Abiding commitment to learn and adhere to the norms and values enshrined in the Indian Constitution.<span></p>
+<p><span><strong>(D) </strong> Understanding the value of a just and impartial exercise of authority.</span></p>
+<p><span><strong>(E) </strong> Ability to participate in community development and other social programme.</span></p>
+<p><span><strong>(F) </strong> A healthy life style free of substance abuse and other unhealthy practices.</span></p>
+<p><span><strong>(G) </strong> Sensitivity to the needs of poor and socially disadvantaged fellow citizens.</span></p>
+<p><span><strong>(H) </strong> Inculcating habits of restraint and self-awareness.</span></p>
+<p><span><strong>(I) </strong> Understanding the values of honesty, truthfulness, self-sacrifice, perseverance and hard work.</span></p>
+<p><span><strong>(J) </strong> Respect for knowledge, wisdom and the power of ideas.</span></p>
+]]>
+
+    </string>
+
+    <string name="flag">
+        <![CDATA[
+       <p>The NCC flag for various units of the NCC was first introduced in <b>1951</b>.</p>
+
+<p>The flag was of same pattern, colour and size as was used by various regiments of the Army.</p>
+
+<p>The only difference was that it had the NCC badge and unit designation placed in the centre.</p>
+
+<p>Later on it was felt that the flag should be in keeping with the inter-service character of the Corps.</p>
+
+<p>In 1954 the existing tri-colour flag was introduced.</p>
+
+<p>The three colours in the flag depict the three services of the Corps, red for the Army, deep blue for the Navy and light blue for the Air Force.</p>
+
+<p>The letters NCC and the NCC crest in gold in the middle of the flag encircled by a wreath of lotus, give the flag a colourful look and a distinct identity.</p>
+
+     ]]>
+    </string>
+
+    <string name="song">
+<![CDATA[<p>
+<h4>NCC Song Lyrics</h4>
+
+<p><span><font color=#0000CD>Hum Sab Bharatiya Hain, Hum Sab Bharatiya Hain</font></span></p>
+
+<p><span><font color=#0000CD>Apni Manzil Ek Hai,</font></span></p>
+
+<p><span><font color=#0000CD>Ha, Ha, Ha, Ek Hai,</font></span></p>
+
+<p><span><font color=#0000CD>Ho, Ho, Ho, Ek Hai.</font></span></p>
+
+<p><span><font color=#0000CD>Hum Sab Bharatiya Hain.</font></span></p>
+
+<p>&nbsp;</p>
+
+<p><span><font color=#FF0000>Kashmir Ki Dharti Rani Hai,</font></span></p>
+
+<p><span><font color=#FF0000>Sartaj Himalaya Hai,</font></span></p>
+
+<p><span><font color=#FF0000>Saadiyon Se Humne Isko Apne Khoon Se Pala Hai</font></span></p>
+
+<p><span><font color=#FF0000>Desh Ki Raksha Ki Khatir Hum Shamshir Utha Lenge,</font></span></p>
+
+<p><span><font color=#FF0000>Hum Shamshir Utha Lenge.</font></span></p>
+
+<p>&nbsp;</p>
+
+<p><span><font color=#FF8C00>Bikhre Bikhre Taare Hain Hum Lekin Jhil mil Ek Hai,</font></span></p>
+
+<p><span><font color=#FF8C00>Ha, Ha, Ha, Ek Hai</font></span></p>
+
+<p><span><font color=#FF8C00>Hum Sab Bharatiya Hai.</font></span></p>
+
+<p>&nbsp;</p>
+
+<p><span"><font color=#800080>Mandir Gurudwaare Bhi Hain Yahan</font></span></p>
+
+<p><span><font color=#800080>Aur Masjid Bhi Hai Yahan</font></span></p>
+
+<p><span><font color=#800080>Girija Ka Hai Ghariyaal Kahin</font></span></p>
+
+<p><span><font color=#800080>Mullah ki Kahin Hai Ajaan</font></span></p>
+
+<p>&nbsp;</p>
+
+<p><span><font color=#FF8C00>Ek Hee Apna Ram Hain, Ek hi Allah Taala Hai,</font></span></p>
+
+<p><span><font color=#FF8C00>Ek Hee Allah Taala Hain, Raang Birange Deepak Hain Hum,</font></span></p>
+
+<p><span><font color=#FF8C00>lekin Jag mag Ek Hai, Ha Ha Ha Ek Hai, Ho Ho Ho Ek Hai.</font></span></p>
+
+<p><span><font color=#FF8C00>Hum Sab Bharatiya Hain, Hum Sab Bharatiya Hain.</font></span></p>
+
+</p>]]>
+    </string>
+    <string name="input">Others</string>
+    <string name="list_of_candidates">List Of Cadets</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="sort_ascending">Sort Ascending</string>
+    <string name="sort_descending">Sort Descending</string>
+    <string name="hiding_row_sample">Hiding 3. Row Sample</string>
+    <string name="showing_row_sample">Showing 3. Row Sample</string>
+    <string name="scroll_to_column_position">Scroll to 15. column position</string>
+    <string name="scroll_to_row_position">Scroll to 5. row position</string>
+    <string name="show_hide_the_column">Showing / Hiding 1. column</string>
+    <string name="table_pagination_details">Page %s, showing items %s - %s.</string>
+    <string name="list_of_years">List Of Years</string>
+
+    <string-array name="moods">
+        <item>Happy</item>
+        <item>Sad</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="items_per_page">
+        <item>10</item>
+        <item>20</item>
+        <item>25</item>
+        <item>50</item>
+        <item>All</item>
+    </string-array>
+
+    <string-array name="sort_by">
+        <item>BY ID</item>
+        <item>BY Name</item>
+        <item>BY Institute</item>
+        <item>BY Email</item>
+        <item>BY Certificate</item>
+    </string-array>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="content">Do You Really Want To Exit</string>
+    <string name="photo_ins">Upload Cadet,s Photo</string>
+
+    <string name="upload_doc"><![CDATA[<p><strong><strong><u><font color=#FF0000>Documents to be uploaded&nbsp; :-
+            </u></font></strong></strong></p>
+    <p>a)	10th  pass cert for conformity DOB, names(Cadet, Parents)<font color=#FF0000>(Only For Senior Wing)</font></p>
+    <p>b)	Other education qualification obtained (12th or any other)<font color=#FF0000>(Only For Senior Wing)</font></p>
+    <p>c)	Bank A/C pass book copy (First page where, name, bank A/C given and page where last transaction details given.</p>
+    <p>d)	Adhaar Card copy</p>
+    <p>e)	Any other Cert where candidate participated at district level or above in any field.</p>
+    <p>f)	Passport photograph of cadet, Cert (A,B), Camp attended Cert.</p>
+    <p>g)	Parent income Cert</p>]]></string>
+
+    <string name="already_registered"><u>New Registration</u></string>
+    <string name="Forgot_Password"><v>New Registration</v></string>
+
+    <string name="about_ncc">About NCC</string>
+    <string name="download">Download</string>
+    <string name="phhp_amp_c_champion_ncc_dte"><![CDATA[PHHP&C CHAMPION NCC DTE]]></string>
+    <string name="today_s_lecture">Today\'s Lecture</string>
+    <string name="register_for_ncc">Enrollment For NCC</string>
+    <string name="login_as">Login as..</string>
+    <string name="app_label">search</string>
+    <string name="search_hint">Enter Search String</string>
+
+    <string-array name="nationality">
+        <item>Indian</item>
+        <item>Nepali</item>
+    </string-array>
+    <!--////////////////////NCC DTE PHHP&C
+    CHAMPION DTE-->
+    <string-array name="state">
+        <item>Punjab</item>
+        <item>Haryana</item>
+        <item>Chandigarh</item>
+        <item>Himachal Pradesh</item>
+        <item>Delhi</item>
+        <item>Rajasthan</item>
+        <item>Uttar Pradesh</item>
+        <item>Goa</item>
+        <item>Bihar</item>
+        <item>Gujarat</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Chhattisgarh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Tripura</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+        <item>Telangana</item>
+
+
+    </string-array>
+
+    <string-array name="income">
+        <item>Below 36,000</item>
+        <item>36,001 to 72,000</item>
+        <item>72,001 to 1,20,000</item>
+        <item>1,20,001 to 3,60,000</item>
+        <item>3,60,001 to 14,40,000</item>
+        <item>14,40,001 to 72,00,000</item>
+    </string-array>
+
+    <string-array name="stream">
+        <item>Arts</item>
+        <item>Science</item>
+        <item>Commerce</item>
+    </string-array>
+
+    <string-array name="ncc_year">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="blood_group">
+        <item>O−</item>
+        <item>O+</item>
+        <item>A−</item>
+        <item>A+</item>
+        <item>B−</item>
+        <item>B+</item>
+        <item>AB−</item>
+        <item>AB+</item>
+    </string-array>
+
+    <string-array name="wing">
+        <item>SD</item>
+        <item>SW</item>
+        <item>JD</item>
+        <item>JW</item>
+    </string-array>
+
+    <string name="my_api_key">ec01f8c2eb6ac402f2ca026dc2d9b8fd</string>
+    <string name="error_msg">Sorry! Couldn\'t fetch movies.</string>
+    <string name="btn_retry">Retry</string>
+    <string name="error_msg_no_internet">Not connected to internet</string>
+    <string name="error_msg_timeout">The server took too long to respond</string>
+    <string name="error_msg_unknown">An unexpected error occurred</string>
+    <string name="tap_to_reload">Tap to reload</string>
+
+</resources>
+

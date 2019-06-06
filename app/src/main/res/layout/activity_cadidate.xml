@@ -1,0 +1,296 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+     </LinearLayout>
+
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:id="@+id/capture_img_iv"
+                android:src="@drawable/punjab1"/>
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/_30sdp"
+                android:paddingLeft="5dp"
+                android:text="Cadet Informations:-"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/_20ssp" />
+
+            <LinearLayout
+                android:id="@+id/dob_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:id="@+id/dob_iv"
+                    style="@style/HorizontalWeight"
+                    android:layout_weight=".1"
+                    android:padding="5dp"
+                    android:src="@drawable/date" />
+
+                <TextView
+                    android:id="@+id/dob_tv"
+                    style="@style/HorizontalWeight"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight=".8"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:hint="Select Date of Birth"
+                    android:textAlignment="gravity"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/_30sdp"
+                android:paddingLeft="5dp"
+                android:text="Select Class:-"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/_15ssp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:id="@+id/class_spinner"> </Spinner>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/_30sdp"
+                android:paddingLeft="5dp"
+                android:text="Gender:-"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/_15ssp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:checked="true"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:textColor="@color/gray"
+                    android:text="Female" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/_30sdp"
+                android:paddingLeft="5dp"
+                android:text="Marriage Status:-"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/_15ssp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/unmarried"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:checked="true"
+                    android:text="UnMarried" />
+
+                <RadioButton
+                    android:id="@+id/married"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:textColor="@color/gray"
+                    android:text="Married" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/_30sdp"
+                android:paddingLeft="5dp"
+                android:text="Select School/College:-"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/_15ssp" />
+
+             <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:id="@+id/school_spinner"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/_30sdp"
+                android:paddingLeft="5dp"
+                android:text="Enrolled in NCC Before:-"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/_15ssp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:checked="true"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:text="No" />
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:hint="Enrolment Number"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                style="@style/my_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Bank A/C with IFSC Code"
+                android:textColor="@color/red" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:hint="Bank Name"
+                android:textColor="@color/black"
+                android:id="@+id/bank_name_et"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/black"
+                android:hint="Acc No."
+                android:id="@+id/acc_no_et"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:hint="IFSC Code"
+                android:textColor="@color/black"
+                android:id="@+id/ifsc_code_et"/>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/rounded_corner_button"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+</FrameLayout>
+
+
+

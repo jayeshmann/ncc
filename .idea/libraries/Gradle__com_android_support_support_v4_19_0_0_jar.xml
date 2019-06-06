@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:support-v4:19.0.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-v4/19.0.0/afee690af14bd2c32d400cdf78e746fd45c386fa/support-v4-19.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-v4/19.0.0/856566e40b586b1299f31f1590b2e708f1a6928b/support-v4-19.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

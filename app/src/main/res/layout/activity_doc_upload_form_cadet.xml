@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    tools:context=".activities.DocUploadFormCadetActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/doc1"
+        layout="@layout/enrollment_form5_card"/>
+
+    <include
+        android:id="@+id/doc2"
+        layout="@layout/enrollment_form5_card"/>
+
+    <include
+        android:id="@+id/doc3"
+        layout="@layout/enrollment_form5_card"/>
+
+    <include
+        android:id="@+id/doc4"
+        layout="@layout/enrollment_form5_card"/>
+
+    <include
+        android:id="@+id/doc5"
+        layout="@layout/enrollment_form5_card"/>
+
+    <include
+        android:id="@+id/doc6"
+        layout="@layout/enrollment_form5_card"/>
+
+    <include
+        android:id="@+id/doc7"
+        layout="@layout/enrollment_form5_card"/>
+
+    <include
+        android:id="@+id/doc8"
+        layout="@layout/enrollment_form5_card"/>
+
+    <include
+        android:id="@+id/doc9"
+        layout="@layout/enrollment_form5_card"/>
+
+        <Button
+            android:layout_marginTop="@dimen/_20sdp"
+            style="@style/my_bt"
+            android:id="@+id/submit_button"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/_5sdp"/>
+    </LinearLayout>
+</ScrollView>

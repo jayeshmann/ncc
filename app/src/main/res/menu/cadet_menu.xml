@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/view_profile"
+        android:title="View Profile"
+        android:visible="true"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/upload_doc"
+        android:title="Upload Documents"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/notification"
+        android:title="Notifications"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:visible="true"
+        app:showAsAction="never" />
+</menu>
